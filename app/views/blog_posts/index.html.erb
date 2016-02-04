@@ -11,7 +11,8 @@
         <h3><%= link_to blog_post.title, blog_post %> </h3>
       </div>
       <div class="panel-body">
-        by <%= blog_post.author %><br />
+       <strong> by <%= blog_post.author %></strong> on <%=blog_post.created_at.strftime('%m/%d/%Y') %><br />
+        
         <p><%= truncate(blog_post.blog_entry, length: 100, separator: ' ') %></p>
          <p> <%= link_to "Read More about #{blog_post.title}", blog_post%> 
         </p>
@@ -27,5 +28,5 @@
 
 <br>
 
-<%= link_to 'New Blog post', new_blog_post_path %>
+<%= link_to 'New Blog post', new_blog_post_path, class: "btn btn-default" %>
 

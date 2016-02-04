@@ -1,4 +1,4 @@
-class BlogPostsController < ApplicationController
+ class BlogPostsController < ApplicationController
   before_action :set_blog_post, only: [:show, :edit, :update, :destroy]
 
   # GET /blog_posts

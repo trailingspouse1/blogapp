@@ -17,3 +17,12 @@
 .cant-see-me {
 	display: none;
 }
+
+body {
+	background-color: #fcfcf2;
+}
+
+.container {
+	background-color: rgba (255, 255, 255, 0.8);
+	margin: 25px 10px 25px 10px;
+}
