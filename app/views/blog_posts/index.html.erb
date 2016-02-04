@@ -11,7 +11,7 @@
         <h3><%= link_to blog_post.title, blog_post %> </h3>
       </div>
       <div class="panel-body">
-       <strong> by <%= blog_post.author %></strong> on <%=blog_post.created_at.strftime('%m/%d/%Y') %><br />
+       <strong> by <%= blog_post.user.username %></strong> on <%=blog_post.created_at.strftime('%m/%d/%Y') %><br />
         
         <p><%= truncate(blog_post.blog_entry, length: 100, separator: ' ') %></p>
          <p> <%= link_to "Read More about #{blog_post.title}", blog_post%> 
